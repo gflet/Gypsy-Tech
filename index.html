@@ -4,76 +4,149 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<style>
+.nospace,body,html{margin:0;padding:0}html{overflow-y:scroll;overflow-x:hidden}body,html{font-size:14px;line-height:1.6em}*,::after,::before{box-sizing:border-box}.bold{font-weight:700}.center{text-align:center}.right{text-align:right}.uppercase{text-transform:uppercase}.capitalise{text-transform:capitalize}.hidden{display:none}.nospace{list-style:none}.block{display:block}.inline *{display:inline-block}.inline :last-child{margin-right:0}.pushright li{margin-right:8px}.pushright li:last-child{margin-right:0}.borderedbox{border:1px solid}.overlay{position:relative;z-index:1}.overlay::after{display:block;position:absolute;top:0;left:0;width:100%;height:100%;content:"";z-index:-1}.bgded{background-position:top center;background-repeat:no-repeat;background-size:cover}.circle{border-radius:50%;background-clip:padding-box}.btn{display:inline-block;padding:15px 25px 17px;text-transform:uppercase;border:1px solid}.btn.medium{padding:10px 20px 12px}.btn.small{padding:8px 18px 10px;text-transform:none}.clear,.group{display:block}.clear::after,.clear::before,.group::after,.group::before{display:table;content:""}.clear,.clear::after,.group,.group::after{clear:both}a{outline:0;text-decoration:none}.fl_left,.imgl{float:left}.fl_right,.imgr{float:right}img{width:auto;max-width:100%;height:auto;margin:0;padding:0;border:none;line-height:normal;vertical-align:middle}.wrapper,hr{width:100%;display:block}.imgl{margin:0 15px 10px 0;clear:left}.imgr{margin:0 0 10px 15px;clear:right}body,input,select,textarea{font-family:Verdana,Geneva,sans-serif}.heading,h1,h2,h3,h4,h5,h6{font-family:Georgia,"Times New Roman",Times,serif}fieldset,form,legend{margin:0;padding:0;border:none}legend{display:none}label{margin-bottom:5px}:invalid,:required{outline:0;box-shadow:none}.heading,h1,h2,h3,h4,h5,h6{margin:0 0 20px;font-size:22px;line-height:normal;font-weight:400;text-transform:capitalize}address{font-style:normal;font-weight:400}hr{height:1px;border:solid;border-width:1px 0 0}.font-xs{font-size:.8rem}.font-x1{font-size:1.2rem}.font-x2{font-size:1.8rem}.font-x3{font-size:2.8rem}.wrapper{margin:0;padding:0;text-align:left;word-wrap:break-word}.hoc{display:block;margin:0 auto}address,article,aside,figcaption,figure,footer,header,main,nav,section{display:block;margin:0;padding:0}.one_half,.one_quarter,.one_third,.three_quarter,.two_quarter,.two_third{display:inline-block;float:left;margin:0 0 0 3.06748466257669%;list-style:none}.first{margin-left:0;clear:left}.one_quarter{width:22.69938650306748%}.one_third{width:31.28834355828221%}.one_half,.two_quarter{width:48.46625766871166%}.two_third{width:65.6441717791411%}.three_quarter{width:74.23312883435584%}.btmspace-10{margin-bottom:10px}.btmspace-15{margin-bottom:15px}.btmspace-30{margin-bottom:30px}.btmspace-50{margin-bottom:50px}.btmspace-80{margin-bottom:80px}.inspace-5{padding:5px}.inspace-10{padding:10px}.inspace-15{padding:15px}.inspace-30{padding:30px}.inspace-50{padding:50px}.inspace-80{padding:80px}
+ 
+ #comments address,#footer button{font-weight:700}#breadcrumb ul,#comments ul,nav ol,nav ul{list-style:none}#breadcrumb ul,#footer .title,#footer button,#mainav ul,#topbar{text-transform:uppercase}.row4{border-top:5px solid}#topbar{padding:15px 0;font-size:.8rem}#topbar .fl_left{margin-top:8px}#topbar .inline>li i{margin:0 px 0 0;line-height:normal}#topbar form{display:block;position:relative;width:100%}#topbar button,#topbar input{display:block;height:36px;border:none}#topbar input{width:100%;min-width:250px;padding:5px 40px 5px 15px;border:1px solid}#topbar button{position:absolute;top:1px;right:1px;width:32px;height:34px;border-left:1px solid;font-size:16px;cursor:pointer}#topbar button em{display:none}#header{padding:0}#header #logo{display:inline-block;position:relative;min-height:55px;margin-top:15px;padding:0 0 0 65px}#header #logo *{margin:0;padding:0;line-height:1}#header #logo h1{font-size:32px;font-variant:small-caps}#header #logo p{font-size:12px;text-transform:lowercase}#header #logo i{position:absolute;top:0;left:0;width:50px;overflow:hidden;font-size:50px}#pageintro{padding:150px 0}#pageintro article{display:block;max-width:60%}#pageintro article .heading{margin-bottom:30px;font-size:42px}#pageintro article p:last-of-type{margin:0}.container{padding:80px 0}#comments ul{margin:0 0 40px;padding:0}#comments li{margin:0 0 10px;padding:15px}#comments .avatar{float:right;margin:0 0 10px 10px;padding:3px;border:1px solid}#comments time{font-size:smaller}#comments .comcont{display:block;margin:0;padding:0}#comments .comcont p{margin:10px 5px 10px 0;padding:0}#comments form{display:block;width:100%}#comments input,#comments textarea{width:100%;padding:10px;border:1px solid}#comments textarea{overflow:auto}#comments div{margin-bottom:15px}#comments input[type=submit],#comments input[type=reset]{display:inline-block;width:auto;min-width:150px;margin:0;padding:8px 5px;cursor:pointer}.sidebar .sdb_holder{margin-bottom:50px}.sidebar .sdb_holder:last-child{margin-bottom:0}#footer{padding:80px 0}#footer .title{margin:0 0 50px;padding:0;font-size:1.2rem}#footer .linklist li{display:block;margin-bottom:15px;padding:0 0 15px;border-bottom:1px solid}#copyright *,nav ol,nav ul{margin:0;padding:0}#footer .linklist li:last-child{margin:0;padding:0;border:none}#footer .linklist li::after,#footer .linklist li::before{display:table;content:""}#footer .linklist li,#footer .linklist li::after{clear:both}#footer .contact.linklist li,#footer .contact.linklist li:last-child{position:relative;padding-left:40px}#footer .contact li *{margin:0;padding:0;line-height:1.6}#footer .contact li i{display:block;position:absolute;top:0;left:0;width:30px;font-size:16px;text-align:center}#footer button,#footer input{border:1px solid}#footer input{display:block;width:100%;padding:8px}#footer button{padding:8px 18px 10px;cursor:pointer}#copyright{padding:20px 0}*,::after,::before{transition:all .3s ease-in-out}#mainav form *{transition:none!important}#breadcrumb,#mainav,.sidebar nav{line-height:normal}#breadcrumb li a::after,#mainav .drop::after,#mainav li li .drop::after,.sidebar nav a::after{position:absolute;font-family:FontAwesome;font-size:10px;line-height:10px}#mainav ul.clear{margin-top:3px}#mainav ul ul{z-index:9999;position:absolute;width:180px;text-transform:none;visibility:hidden;opacity:0}#mainav ul ul ul{left:180px;top:0}#mainav li{display:inline-block;position:relative;margin:0 15px 0 0;padding:0}#mainav li:last-child{margin-right:0}#mainav li li{width:100%;margin:0}#mainav li a{display:block;padding:30px 0}#mainav li li a{border:solid;border-width:0 0 1px}#mainav .drop{padding-left:15px}#mainav li li .drop,#mainav li li a{display:block;margin:0;padding:10px 15px}#breadcrumb li:last-child a::after,#mainav form{display:none}#mainav .drop::after,#mainav li li .drop::after{content:"\f0d7"}#mainav .drop::after{top:35px;left:5px}#mainav li li .drop::after{top:15px;left:5px}#mainav ul li:hover>ul{visibility:visible;opacity:1}#mainav form{margin:0;padding:0}#mainav form select,#mainav form select option{display:block;cursor:pointer;outline:0}#mainav form select{width:100%;padding:5px;border:none}#mainav form select option{margin:5px;padding:0;border:none}#breadcrumb{padding:80px 0 20px}#breadcrumb ul{margin:0;padding:0}#breadcrumb li{display:inline-block;margin:0 6px 0 0;padding:0}#breadcrumb li a{display:block;position:relative;margin:0;padding:0 12px 0 0;font-size:12px}#breadcrumb li a::after{top:3px;right:0;content:"\f101"}#breadcrumb li:last-child a{margin:0;padding:0}.sidebar nav{display:block;width:100%}.sidebar nav li{margin:0 0 3px;padding:0}.sidebar nav a{display:block;position:relative;margin:0;padding:5px 10px 5px 15px;text-decoration:none;border:solid;border-width:0 0 1px}.sidebar nav a::after{top:9px;left:5px;content:"\f101"}.sidebar nav ul ul a{padding-left:35px}.sidebar nav ul ul a::after{left:25px}.sidebar nav ul ul ul a{padding-left:55px}.sidebar nav ul ul ul a::after{left:45px}.pagination{display:block;width:100%;text-align:center;clear:both}.pagination li{display:inline-block;margin:0 2px 0 0}.pagination li:last-child{margin-right:0}.pagination a,.pagination strong{display:block;padding:8px 11px;border:1px solid;background-clip:padding-box;font-weight:400}#backtotop{z-index:999;display:inline-block;position:fixed;visibility:hidden;bottom:20px;right:20px;width:36px;height:36px;line-height:36px;font-size:16px;text-align:center;opacity:.2}#backtotop i{display:block;width:100%;height:100%;line-height:inherit}#backtotop.visible{visibility:visible;opacity:.5}#backtotop:hover{opacity:1}table,td,th{border:1px solid;border-collapse:collapse;vertical-align:top}table,th{table-layout:auto}table{width:100%;margin-bottom:15px}td,th{padding:5px 8px}td{border-width:0 1px}#gallery{display:block;width:100%;margin-bottom:50px}#gallery figure figcaption{display:block;width:100%;clear:both}#gallery li{margin-bottom:30px}body{color:#888;background-color:#FFF}a{color:#DFA94F}a:active,a:focus{background:0 0}.overlay,label span{background-color:inherit}.borderedbox,hr{border-color:#D7D7D7}label span{color:red}:required:focus,input:focus,textarea:focus{border-color:#DFA94F}.overlay{color:#FFF}.overlay::after{color:inherit;background-color:rgba(0,0,0,.55)}.btn,.btn.inverse:hover{color:#FFF;background-color:#DFA94F;border-color:#DFA94F}.btn.inverse,.btn:hover{color:inherit;background-color:transparent;border-color:inherit}#topbar input:focus,.row4{border-color:#DFA94F}.row0{color:#FFF;background-color:#313131}.row1,.row3{color:#888;background-color:#FFF}.row4{color:#FFF;background-color:#313131}.row5,.row5 a{color:#888;background-color:#FFF}#footer button,.coloured{background-color:#DFA94F}.coloured{color:#FFF}#footer input,#topbar button,#topbar input{background-color:#414141;color:#FFF}.coloured a{color:#9E6D1D}#mainav li a,.coloured a:hover{color:inherit}#header #logo h1 a{color:inherit;background-color:inherit}#topbar button,#topbar input{border-color:#313131}#topbar button{color:#DFA94F}#footer .linklist li{border-color:#414141}#footer button,#footer input{border-color:transparent}#footer input:focus{border-color:#DFA94F}#footer button{color:#FFF}#mainav .active a,#mainav a:hover,#mainav li:hover>a{color:#DFA94F;background-color:inherit}#mainav .active li a,#mainav li li a{color:#FFF;background-color:rgba(0,0,0,.6);border-color:rgba(0,0,0,.6)}#comments .avatar,#comments input,#comments textarea,.pagination a,.pagination strong,table,td,th{border-color:#D7D7D7}#mainav .active .active>a,#mainav li li:hover>a{color:#FFF;background-color:#DFA94F}#mainav form select{color:#FFF;background-color:#414141}#breadcrumb a{color:#888;background-color:inherit}#breadcrumb li:last-child a{color:#DFA94F}.container .sidebar nav a{color:inherit;border-color:#D7D7D7}.container .sidebar nav a:hover{color:#DFA94F}#backtotop,.pagination .current *{color:#FFF;background-color:#DFA94F}#comments :required:focus,#comments input:focus,#comments textarea:focus{border-color:#DFA94F}th{color:#FFF;background-color:#373737}#comments input[type=submit],#comments input[type=reset],#comments li,tr{color:inherit;background-color:#FBFBFB}#comments li:nth-child(even),tr:nth-child(even){color:inherit;background-color:#F7F7F7}#comments a,table a{background-color:inherit}@-ms-viewport{width:device-width}@media screen and (min-width:978px){.hoc{max-width:978px}}@media screen and (max-width:900px){.hoc{max-width:90%}#header{padding:15px 0}#header #logo{margin:0}#mainav ul{display:none}#mainav form{display:block;margin-top:12px}#comments input[type=reset]{margin-top:10px}.pagination li{display:inline-block;margin:0 5px 5px 0}#copyright p:first-of-type{margin-bottom:10px}}@media screen and (max-width:750px){.imgl,.imgr{display:inline-block;float:none;margin:0 0 10px}.fl_left,.fl_right{display:block;float:none}.one_half,.one_quarter,.one_third,.three_quarter,.two_quarter,.two_third{display:block;float:none;width:auto;margin:0 0 30px;padding:0}#topbar .fl_left ul{margin-bottom:15px;text-align:center}#topbar .fl_left ul li{display:inline-block;margin-right:20px}#topbar .fl_left ul li:last-child{margin-right:0}#header{text-align:center}#header #logo{margin:0 0 15px}#mainav form{margin-top:0}#pageintro article{max-width:none}#pageintro article .heading{margin-bottom:20px;font-size:32px}#footer,.container{padding-bottom:50px}}@media screen and (max-width:650px){.scrollable{display:block;width:100%;margin:0 0 30px;padding:0 0 15px;overflow:auto;overflow-x:scroll}.scrollable table{margin:0;padding:0;white-space:nowrap}.inline li{display:block;margin-bottom:10px}.pushright li{margin-right:0}.font-x2{font-size:1.4rem}.font-x3{font-size:1.6rem}}
+ 
+/* Screen reader only */.sr-only{position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0;}/* Button styling */.menu-toggle{display: inline-block; padding: .15em 5px; line-height: 1em; font-size: 1em; color: #333; cursor: pointer;}.menu-toggle:hover,#main-menu-checkbox:focus ~ header .menu-toggle{color: #c00; outline: auto;}#main-menu-checkbox{position: absolute; left: -100vw; /* get it off the screen */}/* Default styles + Mobile first Offscreen menu style*/.main-menu{position: absolute; left: -200px; top: 0; height: 100%;transition: left 0.3s ease, box-shadow 0.3s ease;z-index: 999;}.main-menu ul{list-style: none; margin: 0; padding: 2.5em 0 0; /* Hide shadow w/ -8px while 'closed' */ -webkit-box-shadow: -8px 0 8px rgba(0,0,0,.5); -moz-box-shadow: -8px 0 8px rgba(0,0,0,.5); box-shadow: -8px 0 8px rgba(0,0,0,.5); min-height: 100%; width: 200px; background: #1a1a1a;}.main-menu a,.main-menu .menu-close{display: block; padding: .75em 15px; line-height: 1em; font-size: 1em; color:#7B7B7B!important; text-decoration: none; border-bottom: 1px solid #383838;}.main-menu li:first-child a{border-top: 1px solid #383838;}.main-menu a:hover,.main-menu a:focus,.main-menu .menu-close:hover,#main-menu-checkbox:focus ~ header .menu-close{background: #333; text-decoration: underline;}.main-menu .menu-close{position: absolute; right: 0; top: 0; cursor: pointer;}/* On small devices, allow it to toggle...*//* :target for non-JavaScript aria-expanded="true/false" will be for JavaScript*/#main-menu-checkbox:checked ~ header .main-menu,.main-menu[aria-expanded="true"]{left: 0; outline: none; -moz-box-shadow: 3px 0 12px rgba(0,0,0,.25); -webkit-box-shadow: 3px 0 12px rgba(0,0,0,.25); box-shadow: 3px 0 12px rgba(0,0,0,.25);}#main-menu-checkbox:checked ~ header .menu-close,.main-menu[aria-expanded="true"] .menu-close{z-index: 1001;}#main-menu-checkbox:checked ~ header .main-menu ul,.main-menu[aria-expanded="true"] ul{position: relative; z-index: 1000;}/* We could us `.main-menu:target:after`, but it wouldn't be clickable.*/#main-menu-checkbox:checked ~ header .backdrop,.main-menu[aria-expanded="true"] + .backdrop{position: absolute; display: block; content: ""; left: 0; top: 0; width: 100%; height: 100%; z-index: 998; background: #000; background: rgba(0,0,0,.85); cursor: default;}@supports (position: fixed){.main-menu, #main-menu-checkbox:checked ~ header .backdrop, .main-menu[aria-expanded="true"] + .backdrop{position: fixed;}}/* Larger screen styling Horizontal menu*/@media (min-width: 768px){.chaticon {display:none!important;} .menu-toggle, .main-menu .menu-close, #main-menu-checkbox{display: none;}/* Undo positioning of off-canvas menu */ .main-menu{position: absolute;left:60%;top: auto;height: auto; overflow-y: auto; /* fix dumb MS Edge scrollbar issue */}.main-menu ul{display: flex; /* Undo off-canvas styling */ padding: 0; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; height: auto; width: auto; background: none;}.main-menu a{color: #06c; border: 0 !important; /* Remove borders from off-canvas styling */}.main-menu a:hover, .main-menu a:focus{background: none; /* Remove background from off-canvas styling */ color: #c00;}}/* Demo purposes only*/*,*:before,*:after{box-sizing: border-box;}header{padding: 20px; display: flex; align-items: baseline;}.logo{margin: 0 30px 0 10px; font-size: 1.5em;}
+#namanyay-input-container {
+  display: inline-block;
+  position: relative;
+}
+
+#namanyay-input-container button {
+  position: absolute;
+  bottom:0;
+  right: 0;
+  background:#CCA640;
+color:white;
+border: none;
+padding:5px 7px;
+
+}
+
+#namanyay-search-box {
+background: #eee;
+padding:5px;
+ border-radius:4px 0 0 4px;
+-moz-border-radius:10px 0 0 4px;
+-webkit-border-radius:4px 0 0 4px;
+-o-border-radius:4px 0 0 4px;
+border:0 none;
+width:150px;
+ }
+	
+#namanyay-input-container button:hover {background-color:#2980b9; }
+.fa-bars {color:#CCA640;}
+#main-menu-checkbox{display:none;}
+
+  
+/*Chat icon for mobile start*/	
+
+.facebook{background:#3B5998;}
+.telegram{background:#007dbb}
+.livechat{background:#CCA640;}
+.whatsapp{background:#25d366}
+.instagram{background:#e85998}
+.open-button {
+background-color:transparent;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+	bottom:40px;
+	right:40px;
+	z-index:1;
+}
+
+.open-button img
+{
+ width:60px;
+ height:60px;   
+}
+
+/* The popup form - hidden by default */
+#myForm {
+  display: none;
+}
+.form-popup {
+     position: fixed;
+	bottom:40px;
+	right:40px;
+	z-index:1;
+}
+
+/* Set a style for the submit/login button */
+.form-popup .btn {
+ position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  padding: 10px 0;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top:3px;
+border:none;
+}
+
+ .btn a
+{
+ color: #fff!important;    
+}
+/*Chat icon for mobile end*/	
+font-display: swap;	 
+
+</style>
+<style type="text/css">
+      body._fixed_body {
+        position: fixed;
+        overflow: hidden;
+      }
+
+      .iframe-left {
+        left: 0;
+        bottom: 0;
+        right: auto;
+      }
+
+      .iframe-right {
+        left: auto;
+        bottom: 0;
+        right: 0;
+      }
+    </style>
+
 </head>
 <body id="top">
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<div class="wrapper row0">
-  <div id="topbar" class="hoc clear"> 
-    <!-- ################################################################################################ -->
-    <div class="fl_left">
-      <ul class="nospace inline pushright">
-        <li><i class="fa fa-sign-in"></i> <a href="#">Login</a></li>
-        <li><i class="fa fa-user"></i> <a href="#">Register</a></li>
-      </ul>
-    </div>
-    <div class="fl_right">
-      <form class="clear" method="post" action="#">
-        <fieldset>
-          <legend>Search:</legend>
-          <input type="search" value="" placeholder="Search Here&hellip;">
-          <button class="fa fa-search" type="submit" title="Search"><em>Search</em></button>
-        </fieldset>
-      </form>
-    </div>
-    <!-- ################################################################################################ -->
-  </div>
-</div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<div class="wrapper row1">
-  <header id="header" class="hoc clear"> 
-    <!-- ################################################################################################ -->
-    <div id="logo" class="fl_left">
-      <h1><a href="index.html">Gestpio</a></h1>
-      <i class="fa fa-map-o"></i>
-      <p>Dapibus metus proin</p>
-    </div>
-    <!-- ################################################################################################ -->
-    <nav id="mainav" class="fl_right">
-      <ul class="clear">
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a class="drop" href="#">Pages</a>
-          <ul>
-            <li><a href="pages/gallery.html">Gallery</a></li>
-            <li><a href="pages/full-width.html">Full Width</a></li>
-            <li><a href="pages/sidebar-left.html">Sidebar Left</a></li>
-            <li><a href="pages/sidebar-right.html">Sidebar Right</a></li>
-            <li><a href="pages/basic-grid.html">Basic Grid</a></li>
-          </ul>
-        </li>
-        <li><a class="drop" href="#">Dropdown</a>
-          <ul>
-            <li><a href="#">Level 2</a></li>
-            <li><a class="drop" href="#">Level 2 + Drop</a>
-              <ul>
-                <li><a href="#">Level 3</a></li>
-                <li><a href="#">Level 3</a></li>
-                <li><a href="#">Level 3</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Level 2</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Link Text</a></li>
-        <li><a href="#">Link Text</a></li>
-      </ul>
-    </nav>
-    <!-- ################################################################################################ -->
-  </header>
-</div>
+<input id="main-menu-checkbox" type="checkbox">
+<header>
+<label for="main-menu-checkbox" class="menu-toggle">
+<span class="sr-only"></span>
+<span class="fa fa-2x fa-bars"> </span>
+</label>
+<span id="namanyay-input-container">
+<a href="/" class="logo">Gypsy Tech</a> <form id="searchthis" style="display:inline;" action="/search-link" method="post" target="_blank">
+<input id="namanyay-search-box" name="inp" type="text" placeholder=" Search Here...">
+<button type="submit" id="namanyay-search-btn">
+<i class="fa fa-search"></i>
+</button>
+</form>
+</span>
+<nav id="main-menu" role="navigation" class="main-menu" aria-expanded="false" aria-label="Main menu">
+<label for="main-menu-checkbox" class="menu-close">
+<span class="sr-only"></span>
+<span class="fa fa-close"> </span>
+</label>
+<ul>
+<li><a href="#" title="Hovatek Forum">Forum</a></li>
+<li><a class="drop" href="#">Blog</a></li>
+<li><a href="#" title="Mobile App">Mobile App</a></li>
+<li><a href="#" title="Private Support">Private Support</a></li>
+<li><a href="#" title="Private Support">Courses</a></li>
+</ul>
+</nav>
+<label for="main-menu-checkbox" class="backdrop" tabindex="-1" aria-hidden="true" hidden=""></label>
+</header>
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
@@ -81,18 +154,19 @@
   <div id="pageintro" class="hoc clear"> 
     <!-- ################################################################################################ -->
     <article>
-      <div class="overlay inspace-30 btmspace-30">
-        <p class="font-xs nospace">Vivamus condimentum et mi quis</p>
-        <h2 class="heading">Consequat curabitur massa</h2>
-        <p>Pharetra vel leo nullam dictum ipsum eu molestie tincidunt nulla nunc pharetra nunc quis accumsan elit est id justo morbi et ullamcorper lectus ac fermentum enim habitant morbi tristique.</p>
-      </div>
-      <footer>
-        <ul class="nospace inline pushright">
-          <li><a class="btn inverse" href="#">Consequat</a></li>
-          <li><a class="btn" href="#">Scelerisque</a></li>
-        </ul>
-      </footer>
-    </article>
+<div class="overlay inspace-30 btmspace-30">
+<p class="font-xs nospace">Fast, Professional &amp; Reliable</p>
+<h2 class="heading">Online Tech. Support</h2>
+<p>Getting solutions to your device issues has never been easier. Our experienced Team of Technicians and Developers is focused on resolving your problems quickly, so you can go back to enjoying your gadget.</p>
+</div>
+<footer>
+
+<ul class="nospace inline pushright">
+<li><a class="btn inverse" href="# title="Sign up for Free Tech. Support">Get Free Support</a></li>
+<li><a class="btn" href="#" title="Try our Private Tech. Support">Talk to an Expert</a></li>
+ </ul>
+</footer>
+</article>
     <!-- ################################################################################################ -->
   </div>
 </div>
@@ -212,46 +286,50 @@
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <div class="wrapper row4">
-  <footer id="footer" class="hoc clear"> 
-    <!-- ################################################################################################ -->
-    <div class="one_third first">
-      <h6 class="title">Tincidunt orci porttitor</h6>
-      <ul class="nospace linklist contact">
-        <li><i class="fa fa-map-marker"></i>
-          <address>
-          Street Name &amp; Number, Town, Postcode/Zip
-          </address>
-        </li>
-        <li><i class="fa fa-phone"></i> +00 (123) 456 7890<br>
-          +00 (123) 456 7890</li>
-        <li><i class="fa fa-fax"></i> +00 (123) 456 7890</li>
-        <li><i class="fa fa-envelope-o"></i> info@domain.com</li>
-      </ul>
-    </div>
-    <div class="one_third">
-      <h6 class="title">efficitur ligula vitae</h6>
-      <ul class="nospace linklist">
-        <li><a href="#">Suscipit arcu quisque quis ultrices</a></li>
-        <li><a href="#">Quam lorem ipsum dolor sit amet</a></li>
-        <li><a href="#">Consectetur adipiscing elit vestibulum</a></li>
-        <li><a href="#">Vulputate elit turpis quis porta nibh</a></li>
-        <li><a href="#">In duis consectetur luctus neque sed</a></li>
-      </ul>
-    </div>
-    <div class="one_third">
-      <h6 class="title">Dapibus metus maecenas</h6>
-      <p class="btmspace-30">Neque urna a nisl suspendisse potenti proin id lectus eget.</p>
-      <form method="post" action="#">
-        <fieldset>
-          <legend>Newsletter:</legend>
-          <input class="btmspace-15" type="text" value="" placeholder="Name">
-          <input class="btmspace-15" type="text" value="" placeholder="Email">
-          <button type="submit" value="submit">Submit</button>
-        </fieldset>
-      </form>
-    </div>
-    <!-- ################################################################################################ -->
-  </footer>
+  <footer id="footer" class="hoc clear">
+
+<div class="one_third first">
+<h6 class="title">Contact</h6>
+<ul class="nospace linklist contact">
+<li><i class="fa fa-map-marker"></i>
+<address>
+<span>Lagos</span>, <span>Nigeria</span>.
+</address>
+</li>
+<li><i class="fa fa-phone"></i> <a href="tel:+2348146856049">0804-GFLET</a> </li>
+ <li><i class="fa fa-envelope-o"></i> <a href="mailto:contact@hovatek.com">contact@gflet.com</a> </li>
+<li><i class="fa fa-clock-o"></i> Mondays to Saturdays 09:00 - 18:00 (GMT +01:00) </li>
+</ul>
+<img src="/hotlink-ok/hovatekprof.png" alt="">
+</div>
+<div class="one_third">
+<h6 class="title">Popular Links</h6>
+<ul class="nospace linklist">
+<li><a href="https://blog.hovatek.com/free-hovatek-t-shirts-we-would-like-to-know-your-size/">Free T-shirts</a></li>
+<li><a href="#">Tecno stock roms</a></li>
+<li><a href="#">Infinix stock roms</a></li>
+<li><a href="#">Itel stock roms</a></li>
+<li><a href="#">VenFinder</a></li>
+<li><a href="#">PhoneSpecs411</a></li>
+<li> &nbsp; <i class="btmspace-15 fa fa-2x fa-cc-visa"></i> <i class="btmspace-15 fa fa-2x fa-cc-mastercard"></i> <i class="btmspace-15 fa fa-2x fa-google-wallet"></i> <i class="btmspace-15 fa fa-2x fa-bitcoin"></i></li>
+</ul>
+</div>
+<div class="one_third">
+<h6 class="title">About</h6>
+<p class="btmspace-30">Gypsy Tech is an online Tech. Support platform where anybody can easily and conveniently get solutions to device (phone, PC, tablets etc) issues or questions </p>
+<ul class="nospace inline pushright">
+<li><a href="https://www.facebook.com/gfeton" title="Facebook"><i class="fa fa-facebook fa-2x"></i></a></li>
+<li><a href="https://twitter.com/gfleton" title="Twitter"><i class="fa fa-twitter fa-2x"></i></a></li>
+<li><a href="#" title="Youtube"><i class="fa fa-youtube-play fa-2x"></i></a></li>
+<li><a href="#" title="Linkedin"><i class="fa fa-linkedin fa-2x"></i></a></li>
+<li><a href="https://www.instagram.com/gfleton/" title="Instagramn"><i class="fa fa-instagram fa-2x"></i></a></li>
+<li><a href="https://www.pinterest.com/gfleton/" title="Pinterest"><i class="fa fa-pinterest fa-2x"></i></a></li>
+
+<li><a href="#" title="Telegram"><i class="fa fa-telegram fa-2x"></i></a></li>
+</ul>
+</div>
+
+</footer>
 </div>
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
