@@ -100,8 +100,36 @@
     </script>
 
 </head>
-<body id="top">
-    
+<body id="top" class="pace-done">
+        <script src="../js/pace.js"></script>
+		<div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="width: 100%;">
+		  <div class="pace-progress-inner"></div>
+		</div>
+		<div class="pace-activity"></div></div>
+		<style>
+		.pace {
+		  -webkit-pointer-events: none;
+		  pointer-events: none;
+
+		  -webkit-user-select: none;
+		  -moz-user-select: none;
+		  user-select: none;
+		}
+
+		.pace-inactive {
+		  display: none;
+		}
+
+		.pace .pace-progress {
+		  background: #c00000;
+		  position: fixed;
+		  z-index: 2000;
+		  top: 0;
+		  right: 100%;
+		  width: 100%;
+		  height: 2px;
+		}
+		</style>
 	<header>
 	<div class="container-fluid">
      <div class="navbar-header">
